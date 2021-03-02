@@ -1,0 +1,7 @@
+What does the pirate say?
+Aargh!
+What is the reason for the argument?
+Argh.
+What is the argument to the function?
+arg
+

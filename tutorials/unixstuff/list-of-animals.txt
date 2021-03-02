@@ -1,0 +1,11 @@
+cat
+dog
+elephant
+giraffe
+cheeta
+leopard
+snake
+frog
+fish
+lion
+wolf

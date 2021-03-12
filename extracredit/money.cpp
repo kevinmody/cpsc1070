@@ -1,0 +1,68 @@
+#include "money.h"
+
+
+money_t::money_t(){
+
+dollars = 0;
+cents = 0;
+
+}
+
+
+money_t::money_t(double amount){
+
+dollars = amount;
+cents = (amount - dollars)*100;
+
+}
+
+money_t::money_t(int d, int c){
+
+dollars = d;
+cents = c;
+
+}
+
+
+
+
+int money_t::get_dollars(){
+return dollars;
+}
+int money_t::get_cents(){
+return cents;
+}
+
+void money_t::set (int d, int c){
+    dollars = d;
+    cents = c;
+}
+void money_t::set_dollars(int dollars_amt){
+    dollars = dollars_amt;
+}
+
+void money_t::set_cents(int cents_amt){
+
+    cents = cents_amt;
+}
+
+int money_t::value_in_cents(){
+
+    int total = 0;
+    total = dollars*100;
+    total = total+cents;
+    return total;
+
+}
+
+double money_t::compute_value(){
+
+    double total = 0;
+    total = dollars;
+    total = total + (cents/100.0);
+
+    return total;
+}
+
+
+money_t::~money_t(){}
